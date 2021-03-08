@@ -8,4 +8,8 @@ Features -
 ⚡️ User self registeration, self password reset and profile  
 ⚡️ Admin pannel to add users, items from frontend  
 ⚡️ Role managment to provide necessary authorisation as per requirment  
-⚡️ Password is hash and real password will never be stored in database
+⚡️ Password is hash and real password will never be stored in database  
+
+Live project deployed using Heroku - 
+
+https://crm-rhlklwr.herokuapp.com/
