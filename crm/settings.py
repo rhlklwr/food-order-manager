@@ -120,18 +120,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = Path(BASE_DIR).joinpath('staticfiles')
-
 STATIC_URL = '/static/'
-
-MEDIA_ROOT = Path(BASE_DIR).joinpath('static/images')
-
-MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     Path(BASE_DIR).joinpath('static')
 ]
 
+STATIC_ROOT = Path(BASE_DIR).joinpath('static')
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = Path(BASE_DIR).joinpath('static/images')
 
 
 # SMTP configuration
