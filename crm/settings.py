@@ -130,7 +130,9 @@ STATICFILES_DIRS = [
     Path(BASE_DIR).joinpath('static')
 ]
 
-MEDIA_ROOT = Path(BASE_DIR).joinpath('staticfiles/images')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+MEDIA_ROOT = Path(BASE_DIR).joinpath('static/images')
 
 
 # SMTP configuration
